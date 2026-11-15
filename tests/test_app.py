@@ -17,9 +17,9 @@ def test_root_deve_retornar_ola_mundo():
 
     # Act
     response = client.get('/')
-
+#
     # Assert
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {'message': 'Olá Mundo!'}
 
-    
+
